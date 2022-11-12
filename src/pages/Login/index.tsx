@@ -8,7 +8,9 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/home");
+    if (user) {
+      navigate("/home");
+    }
   }, [user]);
 
   return (

@@ -1,6 +1,5 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Auth, Home, Login } from "./pages";
+import { Auth, Home, Login, Logout } from "./pages";
 
 const AppRoutes = () => {
   return (
@@ -10,6 +9,7 @@ const AppRoutes = () => {
         <Route path=":token" />
       </Route>
       <Route path="/home" element={<Home />} />
+      <Route path="/logout" element={<Logout />} />
     </Routes>
   );
 };
