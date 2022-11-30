@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rhap_container {
+  @apply dark:bg-slate-800 bg-zinc-50 shadow-none !important;
+}
+
+.rhap_time {
+  @apply dark:text-white text-black shadow-none text-sm !important;
+}
+
+.rhap_progress-indicator {
+  @apply bg-pink-700 shadow-sm !important;
+}
+
+.rhap_download-progress {
+  @apply dark:bg-slate-700 shadow-sm rounded-xl !important;
+}
+
+.rhap_progress-bar-show-download {
+  @apply dark:bg-red-400 !important;
+}
+
+.rhap_progress-filled {
+  @apply bg-pink-900 shadow-sm !important;
+}
+
+.rhap_button-clear {
+  @apply fill-pink-700 text-pink-700 stroke-pink-700;
+}
+
+.rhap_volume-bar {
+  @apply bg-pink-900;
+}
+
+.rhap_volume-indicator {
+  @apply bg-pink-700 border-none shadow-md opacity-100;
+}

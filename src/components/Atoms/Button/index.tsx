@@ -4,7 +4,7 @@ import { IButtonProps } from "./types";
 const Button: FC<IButtonProps> = ({ children, ...props }) => {
   return (
     <button
-      className="bg-spotify-green hover:bg-spotify-green-200 transition-colors px-3 py-2 rounded-sm shadow-sm"
+      className="bg-pink-700 hover:bg-pink-800 transition-colors px-3 py-2 rounded-sm shadow-sm text-white"
       {...props}
     >
       {children}
