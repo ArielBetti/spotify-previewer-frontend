@@ -1,6 +1,9 @@
 import { FC } from "react";
-import { IButtonProps } from "./types";
 
+// types
+import type { IButtonProps } from "./types";
+
+// ::
 const Button: FC<IButtonProps> = ({ children, ...props }) => {
   return (
     <button
