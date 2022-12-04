@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rhap_container {
+  @apply bg-transparent shadow-none !important
+}
+
+.rhap_time {
+  @apply dark:text-white text-black  !important
+}
+
+.rhap_download-progress {
+  @apply dark:bg-slate-900 dark:bg-slate-600 bg-gray-300 !important
+}
+
+.rhap_progress-filled {
+  @apply bg-spotify-green !important
+}
+
+.rhap_progress-indicator {
+  @apply bg-spotify-green shadow-none border-2 border-slate-800 !important
+}
+
+.rhap_button-clear {
+  @apply text-spotify-green !important
+}
+
+.rhap_volume-bar {
+  @apply bg-spotify-green-200 !important
+}
+
+.rhap_volume-indicator {
+  @apply bg-spotify-green shadow-none border border-slate-900 !important
+}
+
+::-webkit-scrollbar-track {
+  @apply dark:bg-slate-700 bg-white !important;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-spotify-green !important;
+}
