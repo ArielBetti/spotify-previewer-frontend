@@ -1,5 +1,9 @@
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Auth, Home, Login, Logout } from "./pages";
+import { TapumeLoader } from "./components";
+import { Album, Artist, Auth, Login, Logout } from "./pages";
+
+const Home = lazy(() => import("./pages/Home"));
 
 const AppRoutes = () => {
   return (
@@ -8,7 +12,20 @@ const AppRoutes = () => {
       <Route path="/auth" element={<Auth />}>
         <Route path=":token" />
       </Route>
-      <Route path="/home" element={<Home />} />
+      <Route
+        path="/home"
+        element={
+          <Suspense fallback={<TapumeLoader open />}>
+            <Home />
+          </Suspense>
+        }
+      />
+      <Route path="/artist" element={<Artist />}>
+        <Route path=":id" />
+      </Route>
+      <Route path="/album" element={<Album />}>
+        <Route path=":id" />
+      </Route>
       <Route path="/logout" element={<Logout />} />
     </Routes>
   );
