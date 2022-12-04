@@ -13,7 +13,7 @@ const DraggableItems: FC<TDraggableItems> = ({ children }) => {
 
   return (
     <div
-      className="flex gap-6 overflow-hidden"
+      className="flex gap-6 overflow-x-scroll scrollbar-hide"
       {...events}
       ref={ref} // add reference and events to the wrapping div
     >

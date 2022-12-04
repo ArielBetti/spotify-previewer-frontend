@@ -17,7 +17,8 @@
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "6",
     "react-use-draggable-scroll": "^0.4.7",
-    "recoil": "^0.7.6"
+    "recoil": "^0.7.6",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
