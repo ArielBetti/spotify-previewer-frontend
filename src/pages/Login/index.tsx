@@ -20,7 +20,7 @@ const Login = () => {
       <div className="pt-3">
         <a
           className="text-white bg-spotify-green p-3 rounded-sm shadow-lg font-semibold w-auto hover:bg-spotify-green-200 transition-colors"
-          href="http://localhost:8080/login"
+          href={import.meta.env.VITE_AUTH_BFF_URL}
         >
           Login on Spotify
         </a>
