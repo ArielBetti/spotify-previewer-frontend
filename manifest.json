@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Sprev",
+  "short_name": "Sprev",
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#0f172a",
+  "background_color": "#000",
+  "description": "A spotify previewer application",
+  "icons": [
+    {
+      "src": "public/icons/xpotify-192px.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/icons/xpotify-512px.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.spotify.tv.android"
+    }
+  ]
+}
