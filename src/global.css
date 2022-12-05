@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply transition-colors
+}
+
 .rhap_container {
   @apply bg-transparent shadow-none !important
 }

@@ -19,7 +19,7 @@ const Login = () => {
       <p>This application is a spotify music preview</p>
       <div className="pt-3">
         <a
-          className="text-white bg-spotify-green p-3 rounded-sm shadow-lg font-semibold w-auto hover:bg-spotify-green-200 transition-colors"
+          className="text-white bg-spotify-green p-3 rounded-sm shadow-lg font-semibold w-auto hover:bg-spotify-green-200 "
           href={import.meta.env.VITE_AUTH_BFF_URL}
         >
           Login on Spotify

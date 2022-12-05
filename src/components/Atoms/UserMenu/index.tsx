@@ -48,7 +48,7 @@ const UserMenu = () => {
           <button
             onClick={() => navigate("/logout")}
             aria-label="Click to app logout"
-            className="flex items-center justify-start gap-2 hover:text-white hover:bg-red-600 dark:hover:bg-red-500 bg-gray-200 dark:bg-slate-900 w-full text-left p-2 rounded-md transition-colors"
+            className="flex items-center justify-start gap-2 hover:text-white hover:bg-red-600 dark:hover:bg-red-500 bg-gray-200 dark:bg-slate-900 w-full text-left p-2 rounded-md "
           >
             <ArrowLeftOnRectangleIcon className="w-5 h-5" />
             Logout

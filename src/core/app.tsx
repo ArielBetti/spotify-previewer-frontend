@@ -21,7 +21,7 @@ const App = () => {
   }, [theme]);
 
   return (
-    <div className="scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 transition-colors bg-gray-100 text-black dark:bg-slate-900 dark:text-white min-w-screen min-h-screen">
+    <div className="scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100  bg-gray-100 text-black dark:bg-slate-900 dark:text-white min-w-screen min-h-screen">
       <div className="container mx-auto px-4 pb-40 pt-24">
         <BrowserRouter>
           <Header />

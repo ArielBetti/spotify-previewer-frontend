@@ -11,7 +11,7 @@ const ThemeToggle = () => {
   }, [theme]);
 
   return (
-    <button className="transition-colors flex gap-2 items-center bg-spotify-green hover:bg-spotify-green-200 text-white p-2 rounded-sm shadow-md" onClick={() => onToggle()}>
+    <button className=" flex gap-2 items-center bg-spotify-green hover:bg-spotify-green-200 text-white p-2 rounded-sm shadow-md" onClick={() => onToggle()}>
       {theme === 'light' ? (
         <MoonIcon className="h-5 w-5" />
       ) : (
