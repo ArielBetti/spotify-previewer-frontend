@@ -7,6 +7,7 @@ import {
 import { useNavigate, useParams } from "react-router-dom";
 import { atomToken, atomUser } from "../../store/atoms";
 import { selectorGetUser } from "../../store/selector";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -47,7 +48,7 @@ const Auth = () => {
       {user && (
         <div>
           <h1>{user.name}</h1>
-          <img src={user.image} alt="" />
+          <LazyLoadImage effect="blur" loading="lazy" src={user.image} alt="" />
         </div>
       )}
     </div>

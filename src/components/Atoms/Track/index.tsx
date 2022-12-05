@@ -12,17 +12,12 @@ import { atomCurrentTrack } from "../../../store/atoms";
 
 // types
 import type { TTrackProps } from "./types";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // ::
 const Track: FC<TTrackProps> = ({ authors, image, name, uri }) => {
   // recoil: states
   const [currentTrack, setTrack] = useRecoilState(atomCurrentTrack);
-
-  // memo: states
-  const currentPlaying = useMemo(
-    () => currentTrack?.uri === uri,
-    [currentTrack]
-  );
 
   const onPlayTrack = () =>
     setTrack({
@@ -34,7 +29,9 @@ const Track: FC<TTrackProps> = ({ authors, image, name, uri }) => {
   return (
     <div className="flex gap-3 w-full">
       {image ? (
-        <img
+        <LazyLoadImage
+          effect="blur"
+          loading="lazy"
           className="h-16 w-16 rounded-md shadow-md"
           src={image}
           alt={`Image for ${name}`}
@@ -49,7 +46,7 @@ const Track: FC<TTrackProps> = ({ authors, image, name, uri }) => {
             {authors}
           </h2>
         )}
-        {currentPlaying ? (
+        {currentTrack?.uri === uri ? (
           <Audio
             height={16}
             width={16}

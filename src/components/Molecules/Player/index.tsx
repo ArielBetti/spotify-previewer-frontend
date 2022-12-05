@@ -11,11 +11,12 @@ const Player: FC = () => {
   if (!currentTrack?.uri || !user) return null;
 
   return (
-    <div className="fixed w-screen bg-gray-100 dark:bg-slate-800 left-0 bottom-0 pt-3 dark:border-t dark:border-t-slate-700 border-t border-t-gray-300">
+    <div className="z-20 fixed w-screen bg-gray-200 dark:bg-slate-800 left-0 bottom-0 pt-3 dark:border-t dark:border-t-slate-700 border-t border-t-gray-300">
       <div className="flex w-full container mx-auto px-4">
         <div className="flex max-w-lg gap-2 overflow-hidden">
           {currentTrack?.image ? (
             <img
+              loading="lazy"
               className="h-16 w-16 rounded-md shadow-md"
               src={currentTrack.image}
               alt=""

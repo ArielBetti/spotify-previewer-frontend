@@ -1,11 +1,14 @@
 import { FC } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { THeroProps } from "./types";
 
 const Hero: FC<THeroProps> = ({ name, image }) => {
   return (
     <div className="flex w-full pt-3 pb-10 gap-6 flex-wrap lg:flex-row flex-col lg:justify-start lg:items-center items-center justify-center">
       {image ? (
-        <img
+        <LazyLoadImage
+          effect="blur"
+          loading="lazy"
           className="h-40 w-40 rounded-full shadow-lg"
           src={image}
           alt={`${name} image`}

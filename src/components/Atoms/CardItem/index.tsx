@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // types
 import type { TCardItem } from "./types";
@@ -14,7 +15,9 @@ const CardItem: FC<TCardItem> = ({ author, id, image, name, type }) => {
       onClick={() => navigate(`/${type}/${id}`)}
     >
       {image ? (
-        <img
+        <LazyLoadImage
+          effect="blur"
+          loading="lazy"
           className="cursor-pointer w-32 h-32 rounded-md shadow-md"
           draggable={false}
           src={image}
