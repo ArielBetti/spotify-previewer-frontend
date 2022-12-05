@@ -21,7 +21,7 @@ const Header = () => {
           className="cursor-pointer flex gap-1 items-center"
         >
           <MusicalNoteIcon className="h-6 w-6 text-spotify-green" />
-          <h1 className="text-xl font-semibold">Xpotify Lite</h1>
+          <h1 className="text-xl font-bold">Xpotify Lite</h1>
         </div>
         <div className="flex items-center justify-center gap-4">
           <ThemeToggle />

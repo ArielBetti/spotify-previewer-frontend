@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Open sans'
+        sans: 'Montserrat'
       },
       colors: {
         "spotify-green": "#1DB954",
