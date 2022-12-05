@@ -1,5 +1,6 @@
 import { ArrowLeftOnRectangleIcon } from "@heroicons/react/24/outline";
 import { memo, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
 import { atomUser } from "../../../store/atoms";
@@ -21,8 +22,13 @@ const UserMenu = () => {
   return (
     <div className="flex items-center justify-center">
       <div className="relative">
-        <button onClick={() => onClickButton()} className="flex items-center justify-center">
-          <img
+        <button
+          onClick={() => onClickButton()}
+          className="flex items-center justify-center"
+        >
+          <LazyLoadImage
+            effect="blur"
+            loading="lazy"
             className="h-10 w-10 rounded-full shadow-md cursor-pointer"
             src={user.image}
             alt={`User avatar ${user.name}`}
@@ -42,7 +48,7 @@ const UserMenu = () => {
           <button
             onClick={() => navigate("/logout")}
             aria-label="Click to app logout"
-            className="flex items-center justify-start gap-2 hover:text-white bg-gray-200 dark:bg-slate-900 w-full text-left p-2 rounded-md hover:bg-spotify-green-200 transition-colors"
+            className="flex items-center justify-start gap-2 hover:text-white hover:bg-red-600 dark:hover:bg-red-500 bg-gray-200 dark:bg-slate-900 w-full text-left p-2 rounded-md transition-colors"
           >
             <ArrowLeftOnRectangleIcon className="w-5 h-5" />
             Logout

@@ -11,7 +11,7 @@ const TapumeLoader: FC<TTapumeLoader> = ({ open }) => {
   if (!open) return null;
 
   return (
-    <div className="flex min-w-full min-h-screen overflow-hidden absolute top-0 left-0 items-center justify-center bg-opacity-75 bg-slate-900">
+    <div className="z-10 flex min-w-full min-h-screen overflow-hidden absolute top-0 left-0 items-center justify-center bg-opacity-75 bg-slate-900">
       <Oval
         width={100}
         height={100}

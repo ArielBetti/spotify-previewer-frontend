@@ -14,7 +14,7 @@ const Header = () => {
   const isLogged = useRecoilValue(atomUser);
 
   return (
-    <div className="shadow-md fixed left-0 top-0 w-full h-16 bg-gray-200 border-b border-b-gray-300 dark:bg-slate-800 dark:border-b-slate-600">
+    <div className="z-20 shadow-md fixed left-0 top-0 w-full h-16 bg-gray-200 border-b border-b-gray-300 dark:bg-slate-800 dark:border-b-slate-600">
       <div className="flex h-full w-full justify-between items-center container mx-auto px-4">
         <div
           onClick={() => navigate("/")}
